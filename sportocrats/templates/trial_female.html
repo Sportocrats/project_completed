@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>PEC SportoCrats</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'contactus.css' %}">
+    </head>
+    <body>
+        <header class="header1 can group">
+            <h1 class="logo">
+                <a href="main1.html" ><img src="{%static 'Pec1.png'%}"
+                    alt="Image of logo" height="80px" width="125px">&nbspPEC SportoCrats</a>
+            </h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 class="tag">Chandigarh,India</h3>
+            <br>
+            <nav class="nav nav1 hi b">
+                &emsp;&emsp;&emsp;<a href="main1.html">Home</a>&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;<a href="register.html">Register</a>&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;<a href="announce.html">Announcements</a>&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;<a href="aboutus.html">About Us</a>&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;<a href="contactus.html">Contact Us</a>&emsp;&emsp;&emsp;
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+            
+        </section>
+        <section class="row">
+        	<div class="grid">
+                <h1>Cricket Trials</h1>
+                <br>
+                <p></p>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="red">
+                                <th>ID</th>
+                                <th>Team NO.</th>
+                                <th>Result</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dat %}
+                            <tr>
+                                <td>{{i.cricket_female_id}}</td>
+                                <td>{{i.team_no}}</td>
+                                <td>{{i.result}}</td>
+                                <td>{{i.performance}}</td>
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+		    </div>
+        </section>
+
+        <section class="row">
+            <div class="grid">
+                <h1>Football Trials</h1>
+                <br>
+                <p></p>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="red">
+                                <th>ID</th>
+                                <th>Team NO.</th>
+                                <th>Result</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dat1 %}
+                            <tr>
+                                <td>{{i.football_female_id}}</td>
+                                <td>{{i.team_no}}</td>
+                                <td>{{i.result}}</td>
+                                <td>{{i.performance}}</td>
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="grid">
+                <h1>Basketball Trials</h1>
+                <br>
+                <p></p>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="red">
+                                <th>ID</th>
+                                <th>Team NO.</th>
+                                <th>Result</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dat2 %}
+                            <tr>
+                                <td>{{i.basketball_female_id}}</td>
+                                <td>{{i.team_no}}</td>
+                                <td>{{i.result}}</td>
+                                <td>{{i.performance}}</td>
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="grid">
+                <h1>Chess Trials</h1>
+                <br>
+                <p></p>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="red">
+                                <th>ID</th>
+                                <th>Team NO.</th>
+                                <th>Result</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dat3 %}
+                            <tr>
+                                <td>{{i.chess_female_id}}</td>
+                                <td>{{i.team_no}}</td>
+                                <td>{{i.result}}</td>
+                                <td>{{i.performance}}</td>
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="grid">
+                <h1>Table Tennis Trials</h1>
+                <br>
+                <p></p>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="red">
+                                <th>ID</th>
+                                <th>Team NO.</th>
+                                <th>Result</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dat4 %}
+                            <tr>
+                                <td>{{i.table_tennis_female_id}}</td>
+                                <td>{{i.team_no}}</td>
+                                <td>{{i.result}}</td>
+                                <td>{{i.performance}}</td>
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="grid">
+                <h1>Badminton Trials</h1>
+                <br>
+                <p></p>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="red">
+                                <th>ID</th>
+                                <th>Team NO.</th>
+                                <th>Result</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dat5 %}
+                            <tr>
+                                <td>{{i.badminton_female_id}}</td>
+                                <td>{{i.team_no}}</td>
+                                <td>{{i.result}}</td>
+                                <td>{{i.performance}}</td>
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="grid">
+                <h1>Athletics Trials</h1>
+                <br>
+                <p></p>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="red">
+                                <th>ID</th>
+                                <th>Team NO.</th>
+                                <th>Result</th>
+                                <th>Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dat6 %}
+                            <tr>
+                                <td>{{i.athletics_female_id}}</td>
+                                <td>{{i.team_no}}</td>
+                                <td>{{i.result}}</td>
+                                <td>{{i.performance}}</td>
+                            </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer1 can group">
+            <small>&copy; Shubham Arya</small>
+            <nav class="nav foo">
+                &ensp;<a href="main1.html">Home</a>&ensp;
+                &ensp;<a href="register.html"> Register </a>&ensp;
+                &ensp;<a href="aboutus.html"> About Us </a>&ensp;
+                &ensp;<a href="contactus.html"> Contact Us </a>&ensp;
+            </nav>
+        </footer>
+    </body>
+</html>
